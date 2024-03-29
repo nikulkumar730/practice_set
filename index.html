@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>full web page nikul</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+        main{
+            width: 1330px;
+            margin: 0 auto;
+        }
+      * {
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      .d-flex {
+        display: flex;
+      }
+      ul {
+        list-style: none;
+      }
+      /* +++++++++++++++nav-css-+++++++++++++ */
+      nav {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding: 15px;
+      }
+      nav h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+      }
+      nav ul {
+        list-style: none;
+        align-items: center;
+        display: flex;
+      }
+      nav ul li a {
+        padding: 10px;
+        font-size: 0.899rem;
+        color: #8b8b8b;
+      }
+      .navbar {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+      }
+      .navbar ul :nth-child(9) a {
+        background-color: #3498DB;
+        padding: 10px 30px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-left: 30px;
+        color: #fff;
+        font-size: 1rem;
+      }
+
+      .navbar ul :nth-child(7) {
+        position: relative;
+      }
+      /* +++++++++++++++nav-css-dropdown+++++++++++++ */
+      .sec-ul {
+        display: inline-block;
+        top: 100%;
+        position: absolute;
+        left: 0;
+        margin-left: 10px;
+        display: none;
+      }
+      .sec-ul li a {
+        margin: 0px 0px 5px 0px;
+        background-color: #3498DB;
+        color: #fff;
+      }
+      .navbar ul :nth-child(7):hover .sec-ul {
+        display: inline;
+      }
+
+      /* +++++++++++++++hero-section+++++++++++++ */
+      .hero1 {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .w-50 {
+        display: inline-block;
+        width: 50%;
+      }
+      .w-50 img {
+        width: 100%;
+      }
+      .pad-40px {
+        box-sizing: border-box;
+        padding: 40px;
+      }
+      .hero1-contant h1 {
+        font-size: 2.3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 50px;
+        font-weight: 800;
+      }
+      .hero1-contant p {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        color: #8b8b8b;
+      }
+      .w-50 a {
+        border: 1px solid #3498DB;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin-top: 20px;
+        color: #3498DB;
+      }
+      .icon {
+        padding: 10px 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        /* height: 50px;     */
+        background-color: #d6d4d4;
+      }
+      .icon img {
+        filter: grayscale();
+        width: 10%;
+      }
+
+      /* ++++++++++++++about us section ++++++++++++++++ */
+
+      .aboutmain {
+        padding-top: 40px;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .for-flex-about-tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+      }
+      .for-flex-about-tag h1 {
+        font-size: 1.6rem;
+      }
+      .line {
+        background-color: #3498DB;
+        height: 2px;
+        width: 40px;
+        margin: 0 8px;
+      }
+
+      .mar-about-1 {
+        margin-bottom: 30px;
+      }
+      .ab-mar {
+        margin: 20px 0;
+      }
+      .bullates-ul li{
+        margin-bottom: 20px;
+        color: #8b8b8b;
+      }
+      .fa-check-double{
+        color: #3498DB;
+      }
+      .font-color{
+        color: #8b8b8b;
+      }
+      .center-contant{
+        width: 80%;
+        margin: 0 auto;
+      }
+      .count-main{
+        width: 100%;
+        margin: 80px 0;
+        display: flex;
+        align-items: center;
+      }
+      .img-count{
+        width: 40%;
+      }
+      .img-count img{
+        width: 100%;
+      }
+      .count-50row{
+        width: 60%;
+        display: flex;
+flex-wrap: wrap;
+box-sizing: border-box;
+    padding: 20px;
+      }
+      .wid-50-in-b{
+        width: 50%;
+        display: flex;
+        padding: 30px 0;
+      }
+      .fa-medal,.fa-face-smile,.fa-address-book,.fa-clock{
+        font-size: 30px;
+    color: #3498DB;
+    margin-right: 10px;
+    font-weight: 100;
+      }
+      .count-50-div{
+        box-sizing: border-box;
+       padding-right: 1rem;
+      }
+      .count-50-div h1{
+      font-size: 1.6rem;
+      }
+      .count-50-div p{
+        color: #8b8b8b;
+        font-size: 0.7rem;
+      }
+      /* +++++++++++ services cards ++++++++++++++ */
+      .service-cards{
+        width: 80%;
+        margin: 30px auto 50px auto;
+        display: flex;
+        margin-top: 20px;
+      }
+      .w-25{
+        padding: 20px;
+        width: 25%;
+        /* border: 1px solid #8b8b8b; */
+        margin: 10px;
+border-radius: 15px;
+box-shadow: 0px 0px 10px 0px #8b8b8b7e;
+      }
+      .material-symbols-outlined,.fa-futbol,.material-symbols-outlined{
+        color: #fff;
+        background-color: #3498DB;
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 50%;
+      }
+      .card-service-contant{
+        position: relative;
+        overflow: hidden;
+      }
+      .card-service-contant h1{
+       font-size: 1rem;
+       margin: 10px 0;
+      }
+      .card-service-contant p{
+        color: #8b8b8b;
+        font-size: 0.96rem;
+        line-height: 25px;
+        padding-bottom: 10px;
+      }
+      .border-round-blue{
+        position:absolute;
+        width: 70px;
+        height: 70px;
+        background-color: #3498db52;
+        right: -15%;
+        top: 0;
+        border-top-left-radius: 100%;
+        transform: rotate(-90deg); 
+      }
+      /* ++++++++++++++++++++++++++++++++++++++ Big Card ++++++++++++++++++++++++++++++++++++*/
+      
+      .big{
+
+          width: 1000px;
+          margin: 0 auto;
+      }
+      .card-pos-50{
+        width: 50%;
+    }
+    .imgscard{
+
+        position: absolute;
+    }
+    .hellow{
+        width: 50%;
+    }
+    .hello2{
+        position: relative;
+
+    }
+.imgscard{
+    width: 100%;
+}
+.home:active{
+color: #3498DB;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+    <header>
+      <nav>
+        <h1 class="logo" style="display: inline-block">vesperr</h1>
+        <section class="navbar">
+          <ul>
+            <li><a class="home" href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">team</a></li>
+            <li><a href="#">pricing</a></li>
+            <li>
+              <a href="#"
+                >dropdown <span> <i class="fa-solid fa-angle-down"></i> </span
+              ></a>
+              <ul class="sec-ul">
+                <li><a href="#">hellow1</a></li>
+                <li>
+                  <a href="#">hellow2</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="##">Get Started</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <!-- ++++++++++++hero-section++++++++++++ -->
+      <section class="hero1">
+        <section class="w-50 hero1-contant">
+          <h1>Grow your business with <br />vesperr</h1>
+          <p>We are team of designers making website <br />with bootstrap</p>
+          <a href="#">Get Started</a>
+        </section>
+        <section class="w-50 pad-40px">
+          <img src="./img/hero-img.png" alt="" />
+        </section>
+      </section>
+      <section class="icon">
+        <img src="./img/clients/client-1.png" alt="" />
+        <img src="./img/clients/client-2.png" alt="" />
+        <img src="./img/clients/client-3.png" alt="" />
+        <img src="./img/clients/client-4.png" alt="" />
+        <img src="./img/clients/client-5.png" alt="" />
+        <img src="./img/clients/client-6.png" alt="" />
+      </section>
+      <!-- +++++++++++ about us +++++++++++++++++++++++ -->
+      <section class="aboutmain">
+        <section class="for-flex-about-tag">
+          <section class="line"></section>
+          <h1>About Us</h1>
+          <section class="line"></section>
+        </section>
+        <section class="d-flex">
+          <section class="w-50 font-color">
+            <p style="line-height: 25px;" >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+              porro iusto voluptatum autem cum quis ea optio similique amet
+              nulla quas ratione architecto ut rerum quaerat iste deleniti,
+              saepe laborum?
+            </p>
+            <ul class="bullates-ul">
+              <li style="margin-top: 15px;">
+                <i class="fa-solid fa-check-double"></i>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </li>
+              <li>
+                <i class="fa-solid fa-check-double"></i>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </li>
+              <li>
+                <i class="fa-solid fa-check-double"></i>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </li>
+            </ul>
+          </section>
+          <section class="w-50 font-color">
+            <p style="line-height: 25px;" >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+              laboriosam sint praesentium voluptatum laborum porro cum quis ea optio similique amet
+              nulla quas ratione 
+              architecto ut rerum quaerat iste deleniti,
+              saepe laborum?architecto ut rerum quaerat iste deleniti,
+              saepe laborum?
+
+            </p>
+            <a href="#">
+            lean more
+            </a>
+          </section>
+        </section>
+      </section>
+       
+      <section class="center-contant">
+         <section class="count-main">
+      <section class="img-count">
+        <img src="./img/counts-img.svg" alt="">
+      </section>
+<section class="count-50row">
+<section class="count-icon wid-50-in-b">
+    <i class="fa-regular fa-face-smile"></i>
+        <section class="count-50-div">
+            <h1>65</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, illum?</p>
+        </section>
+    </section>
+    <section class="count-icon wid-50-in-b">
+        <i class="fa-solid fa-address-book"></i>
+        <section class="count-50-div">
+            <h1>85</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, illum?</p>
+        </section>
+    </section>
+    <section class="count-icon wid-50-in-b">
+        <i class="fa-regular fa-clock"></i>
+        <section class="count-50-div">
+            <h1>18</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, illum?</p>
+        </section>
+    </section>
+    <section class="count-icon wid-50-in-b">
+        <i class="fa-solid fa-medal"></i>
+        <section class="count-50-div">
+            <h1>15</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, illum?</p>
+        </section>
+    </section>
+        
+</section>
+         </section>
+      </section>
+      <section class="for-flex-about-tag">
+        <section class="line"></section>
+        <h1>SERVICES</h1>
+        <section class="line"></section>
+    </section>
+    <P style="text-align: center; color: #8b8b8b; font-size: 0.9rem; margin: -10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+
+    <section class="service-cards">
+        <section class="w-25 card-service-contant">
+            <div class="border-round-blue"></div>
+            <i class="fa-regular fa-futbol"></i>
+            <h1>Lorem ipsum</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
+        </section>
+        <section class="w-25 card-service-contant">
+            <div class="border-round-blue"></div>
+            <span class="material-symbols-outlined">
+                description
+                </span>
+                <h1>Lorem ipsum</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
+        </section>
+        <section class="w-25 card-service-contant">
+            <div class="border-round-blue"></div>
+            <span class="material-symbols-outlined">
+                speed
+                </span>
+                <h1>Lorem ipsum</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
+        </section>
+        <section class="w-25 card-service-contant">
+            <div class="border-round-blue"></div>
+            <span class="material-symbols-outlined">
+                public
+                </span>
+                <h1>Lorem ipsum</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
+        </section>
+    </section>
+    <!--=============================++++ big cards ++++=============================-->
+
+<section class="big">
+   <section class="card-pos-50">
+    <!-- <section class="hellow"></section> -->
+
+   <section class="imgscard"> <img class="hellow" src="./img/more-services-1.jpg" alt=""></section>
+    <section class="hello2">
+        <h1>hey nikul</h1>
+    </section>
+   </section>
+</section>
+
+
+
+
+        <!-- </section>
+        <section class="big-cardsw50">
+            <img src="./img/more-services-2.jpg" alt="">
+       </section>
+        <section class="big-cardsw50">
+            <img src="./img/more-services-3.jpg" alt="">
+       </section>
+        <section class="big-cardsw50">
+            <img src="./img/more-services-4.jpg" alt="">
+       </section> -->
+    </section>
+    </main>
+</main>
+  </body>
+</html>
